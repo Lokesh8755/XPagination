@@ -16,7 +16,7 @@ const EmployeeDataTable = () => {
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
-        alert('Error fetching data:', error)
+        alert('failed to fetch data', error)
       }
     };
     fetchData();
